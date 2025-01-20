@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+     <link rel="icon" type="image/x-icon" href="mr.jpg">
+     <link rel="stylesheet" type="text/css" href="httpsh://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="page 1.css">
+</head>
+
+<body>
+<!-- header start -->
+  <header class="header">
+    <!-- logo -->
+    <a href="index.html" class="logo">
+      <img src="mr.jpg">
+    </a>
+    
+    <!--nav bar start -->
+    <nav class="navbar">
+      <input types="checkbox" id="check">
+      <label for="check" class="check-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="page 2.html">Menu</a></li>
+        <li><a href="page 3.html">About Us</a></li>
+      </ul>
+      <!--<div id="menu-btn" class="fas -barsfa"></div> -->
+    </nav>
+    <!--nav bar end -->
+
+<!--hyperlink with icons (search, cart, profile, menu button)-->
+    <div class="icons">
+    <div class="cart-container" onmouseover="showCartForm()" onmouseover="hideCartForm()">
+      <a href="4-cart.html">
+        <div class="fas fa-shopping-cart" id="cartButton"></div>
+      </a>
+      <div class="cart-form" id="cart-form">
+        <form>
+          <div id="cartItems"></div>
+          <div id="total-price">Total Price: ₱<span id="totalPrice">0.00</span></div>
+        </form>
+      </div>
+    </div>
+      <!--hyperlink with icons (search, cart, profile, menu button)-->
+    </header>
+    <!--header end here-->
+
+    <!--pagecontent-->
+<div class="content">
+  <section class="about">
+    <div class="about-image">
+      <img src="ana.jpg">
+    </div>
+    <div class="about-content">
+      <h2 style="text-align: center;">Have Figures at MR. Corporation</h2>
+      <p>Affordable high quality products. Rest assure that the durability of our items are top notch, so you don't need to worry about the products breaking by accidents made by your childs</p>
+    </div>
+  </section>
+</div>
+
+<!--topsellers-->
+<section class="menu" id="menu">
+  <h1 class="heading" style="text-align: center; font-size: 60px; letter-spacing: 5px; padding-bottom: 10px; color: white">BEST <span> SELLING</span> FIGURES</h1>
+  
+  <div class="menu"><!--Menuopeningtag-->
+    <div class="container menu-section">
+      <!--product 1-->
+      <a href="page 2.html#wing">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="Wing Gundam Zero.jpg" alt="Wing Gundam Zero">
+          </div>
+          <div class="menu-content">
+            <h3><span style="color:red">[Best Selling!]<br></span>1/100 MG Wing Gundam Zero EW Ver. Ka</h3>
+            
+          </div>
+        </div>
+      </a>
+      
+      <!--product 2-->
+      <a href="page 2.html#gura">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="Gura.jpg" alt="Gawr Gura">
+          </div>
+          <div class="menu-content">
+            <h3><span style="color:red">[Best Selling!]<br>LIMITED PRODUCTION!</span>[Hololive Production] Gawr Gura - Nendoroid</h3>
+            
+          </div>
+        </div>
+      </a>
+
+      <a href="page 2.html#ana">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="ana.jpg" alt="Yanami Anna">
+          </div>
+          <div class="menu-content">
+            <h3><span style="color:red">[Best Selling!]</span><br>Too Many Losing Heroine Pop Up Parade Yanami Anna L Size</h3>
+          </div>
+        </div>
+      </a>
+    </div><!--menuclosingtag-->
+    <div class="to-menu">
+      <a href="page 2.html">See More Figurines Here!</a>
+    </div>
+</section>
+  <!--topseller-->
+  
+  <!--aboutusstart-->
+  
+  <!--aboutusend-->
+  
+  <script src="2-menu.js"></script>
+  
+  <!--footerstart-->
+  <section class="footer">
+    <div class="container">
+      <div class="footer-box-1">
+        <h3>Location </h3>
+        <div class="footer-loc">
+        <a href="https://www.google.com/maps/place/Technological+University+of+the+Philippines+(TUP)+-+Manila/@14.5870842,120.9819119,17z/data=!3m1!4b1!4m6!3m5!1s0x3397ca21ac302015:0x92dcca0f915010d9!8m2!3d14.587079!4d120.9844868!16zL20vMGNyeGY2?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" style="color:white" target=_blank>College of Industrial Education
+        Ermita, Manila, 1000</a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>Stay update with our latest </p>
+      <form>
+        <input type="email" name="email" placeholder="name@gmail.com">
+        <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+      </form>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p>Connect with Us On:</p>
+      <div class="icons">
+        <a href="https://www.facebook.com/manuelf.baluyotiii" style="color:white"><i class="brands facebook">Baluyot's Facebook</i></a><br>
+        <a href="https://www.facebook.com/akoaypogi0714" style="color:white"><i class="brands facebook">Aranquiz's Facebook</i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>  
+    </div>
+  </div>
+</section>
+  <!--footerend-->
+  
+</body>
+</html>

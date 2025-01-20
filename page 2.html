@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widthw=device-width, initial-scale=1">
+  <title>Menu</title>
+  <link rel="icon" type="imagei/x-icon" href="mr.jpg">
+  <link rel="stylesheet" type="text/css" href="httpsh://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!--css file--->
+  <link rel="stylesheet" type="text/css" href="page 2.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="header">
+    <!-- logo -->
+    <a href="index.html" class="logo">
+      <img src="mr.jpg">
+    </a>
+    
+    <!--nav bar start -->
+    <nav class="navbar">
+      <input types="checkbox" id="check">
+      <label for="check" class="check-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="page 2.html">Menu</a></li>
+        <li><a href="page 3.html">About Us</a></li>
+      </ul>
+      <!--<div id="menu-btn" class="fas -barsfa"></div> -->
+    </nav>
+    <!--nav bar end -->
+    
+
+    <!--hyperlink with icons (search, cart, profile, menu button)-->
+    <div class="icons">
+    <div class="cart-container" onmouseover="showCartForm()" onmouse="hideCartForm()">
+      <a href="4-cart.html">
+        <div class="fas fa-shopping-cart" id="cartButton"></div>
+      </a>
+      <div class="cart-form" id="cart-form">
+        <form>
+          <div id="cartItems"></div>
+          <div id="total-price">Total Price: ₱<span id="totalPrice">0.00</span></div>
+        </form>
+      </div>
+    </div>
+      <!--hyperlink with icons (search, cart, profile, menu button)-->
+    </header>
+    <!--header end here-->
+    
+    <!--Menu Section-->
+    <section class="menu" id="menu">
+      <h1 class="heading">OUR <span>PRODUCTS</span></h1>
+      <p class="heading-description">Get your FIGURINES Now!</p>
+    
+             <div class="category-text"><h3>Gundam</h3></div>
+        
+        <div class="container menu-section">
+          <!--Product 1-->
+        <div class="menu-box" id="HGTWFM Gundam">
+          <div class="menu-img">
+            <img src="hgtwfm.jpg" alt="hgtwfm">
+          </div>
+          <div class="menu-content">
+            <h3>HGTWFM 1/144 #26 Gundam Calibarn</h3>
+            <p> From "Mobile Suit Gundam: The Witch of Mercury", comes the Gundam Calibarn 1/144 scale model kit from Bandai! The HG Calibarn is joining the Witch from Mercury lineup with amazing color gradient effects on the chest and V-Fin, in addition to the full range of expansion and deployment gimmicks in the broom and shield.</p>
+            <div onclick="addToCart('HGTWFM Gundam', '₱1,250.00', 'Product/No BG/hgtwfm.jpg', 'Item1'); return false;">
+              <button id="Item1"><span>₱1,250.00 </span></button>
+            </div>
+        </div>
+      </div>
+          
+     <!--product 2-->
+          <div class="menu-box">
+          <div class="menu-img">
+            <img src="Wing Gundam Zero.jpg" alt="Wing Gundam Zero" id="wing">
+          </div>
+          <div class="menu-content">
+            <h3><span style="color:red">[Best Selling!]<br></span>1/100 MG Wing Gundam Zero EW Ver. Ka</h3>
+            <p>The Wing Gundam Zero from "Mobile Suit Gundam Wing: Endless Waltz" now gets a new Ver.Ka release, directly supervised by Hajme Katoki! Each joint has been thoroughly inspected, and the development of the white wings, interlocking gimmicks, and twin-buster rifle shooting poses has been pursued. As a new gimmick, the twin buster rifle is stored on the wing, and transforms into a Neo Bird form! More images will be added soon -- order this spectacular version of the Wing Zero today!</p>
+            <div onclick="addToCart('Wing Gundam Zero', '₱2,500.00', 'Product/No BG/Wing Gundam Zero.jpg', 'Item2'); return false;">
+              <button id="Item2"><span>₱2,500.00 </span></button>
+            </div>
+        </div>
+      </div>   
+     <!--product 3-->
+          <div class="menu-box">
+          <div class="menu-img">
+            <img src="MBGSF.jpg" alt="Mobile Suit Gundam Seed Freedom">
+          </div>
+          <div class="menu-content">
+            <h3>TAMASHII NATIONS - Mobile Suit Gundam Seed Freedom - ZGMF/A-262B Strike Freedom Gundam Type II, Bandai Spirits Gundam Universe Action Figure</h3>
+            <p> <b>The Strike FREEDOM GUNDAM Type-2, which played an active role in Mobile Suit Gundam Seed FREEDOM, has been made into a 3D figure joining the GUNDAM UNIVERSE line!</b><br><br>
+
+Stands approximately 5.9" tall. [Set Contents] Main body, Beam · saber pattern × 2, Beam rifle left and right, 2 Beam Saber effects, 1 pair of interchangeable arms, Joint for TAMASHII STAGE
+
+[Set Contents]</p>
+            <div onclick="addToCart('MBGSF', '₱1,500.00', 'Product/No BG/MBGSF.jpg', 'Item3'); return false;">
+              <button id="Item3"><span>₱1,500.00 </span></button>
+            </div>
+        </div>
+      </div>
+      
+          
+          <!--Add more menu items here with the same structure-->
+        </div>
+        
+             <div class="category-text"><h3>Nendoroid</h3></div>
+        
+        <div class="container menu-section">
+          <!--Product 1-->
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="korone.jpg" alt="Inugami Korone">
+          </div>
+          <div class="menu-content">
+            <h3>[Hololive Productions]Inugami Korone - Nendoroid </h3>
+            <p>Ready to unleash the adorable power of cuteness? Meet Inugami Korone as you’ve never seen her before—this Nendoroid from Good Smile Company captures her vibrant spirit perfectly! Dressed in her signature pastel outfit, complete with a cozy cardigan and playful socks, Korone’s charm is palpable. With her signature doggy ears and cheerful expression, she looks ready for playful antics or a cozy gaming session with her fans. </p>
+            <div onclick="addToCart('korone', '₱1,150.00', 'Product/No BG/korone.jpg', 'Item4'); return false;">
+              <button id="Item4"> <span>₱1,150.00 </span></button>
+            </div>
+        </div>
+      </div>
+          
+     <!--product 2-->
+          <div class="menu-box">
+          <div class="menu-img">
+            <img src="L.jpg" alt="L">
+          </div>
+          <div class="menu-content">
+            <h3>[Death Note]L - Nendoroid</h3>
+            <p>From the popular manga series “DEATH NOTE” comes a Nendoroid of L in an all-new updated version! He comes with three face plates including his standard expression, his thinking expression often seen while he is biting his nails and his smiling expression.</p>
+            <div onclick="addToCart('Nendoroid L', '₱1,150.00', 'Product/No BG/L.jpg', 'Item5'); return false;">
+              <button id="Item5"> <span>₱1,150.00 </span></button>
+            </div>
+          </div>
+        </div>
+             
+     <!--product 3-->
+          <div class="menu-box">
+          <div class="menu-img">
+            <img src="Neru.jpg" alt="Neru Mikamo">
+          </div>
+          <div class="menu-content">
+            <h3>[Blue Archive] Neru Mikamo - Nenoroid</h3>
+            <p>From the popular game “Blue Archive” comes a Nendoroid of Neru Mikamo, the leader of Millennium Science School’s intelligence agency, C&C!</p>
+            <div onclick="addToCart('Neru', '₱1,150.00', 'Product/No BG/Neru.jpg', 'Item6'); return false;">
+              <button id="Item6"> <span>₱1,150.00 </span></button>
+            </div>
+            
+            
+        </div>
+      </div>
+          <!--product 4-->  
+          <div class="menu-box">
+          <div class="menu-img">
+            <img src="Gura.jpg" alt="Gawr Gura" id="gura">
+          </div>
+          <div class="menu-content">
+            <h3><span style="color:red">[Best Selling!]<br>LIMITED PRODUCTION!</span>[Hololive Production] Gawr Gura - Nendoroid</h3>
+            <p>“Domo! Same desu!”<br>
+              <br>
+From the popular VTuber group “hololive production” comes a Nendoroid of hololive English VTuber Gawr Gura! She comes with three interchangeable face plates including a standard expression and two different smiling expressions—one showing off her sharp teeth and one with closed eyes.
+
+She also comes with her buddy Bloop and her trident as optional parts. Gura’s hood can be removed as well, so enjoy changing up her appearance to create all kinds of poses! Be sure to add her to your collection!</p>
+            <div onclick="addToCart('Gura', '₱1,150.00', 'Product/No BG/Gura.jpg', 'Item7'); return false;">
+              <button id="Item7"> <span>1,150.00 </span></button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+           <div class="category-text"><h3>POP UP Parade</h3></div>
+        
+        <div class="container menu-section">
+        <div class="menu-box" >
+          <div class="menu-img">
+            <img src="Miku.jpg" alt="Hatsune Miku">
+          </div>
+          <div class="menu-content">
+            <h3>Hatsune Miku Noodle Stopper PVC Statue Hatsune Miku Flower Fairy Anemone</h3>
+            <p> From “Hatsune Miku” comes this detailed PVC statue! It stands approx. 14 cm tall and comes in a printed box.<br>
+              <br>POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon</p>
+            <div onclick="addToCart('Hatsune Miku', '₱1,400.00', 'Product/No BG/Miku.jpg', 'Item8'); return false;">
+              <button id="Item8"><span>₱1,400.00 </span></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="menu-box" >
+          <div class="menu-img">
+            <img src="kitagawa.jpg" alt="Kitagawa Marin">
+          </div>
+          <div class="menu-content">
+            <h3>My Dress-Up Darling Pop Up Parade PVC Statue Marin Kitagawa</h3>
+            <p> From My Dress-Up Darling comes this Pop Up Parade PVC Statue of Marin Kitagawa standing 18cm tall!<br>
+              <br>
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!</p>
+            <div onclick="addToCart('Kitagwa Marin', '₱1,400.00', 'Product/No BG/kitagawa.jpg', 'Item9'); return false;">
+              <button id="Item9"><span>₱1,400.00 </span></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="menu-box" >
+          <div class="menu-img">
+            <img src="Nikke.jpg" alt="Nikke Dorothy">
+          </div>
+          <div class="menu-content">
+            <h3>Goddess of Victory: Nikke Noodle Stopper PVC Statue Dorothy Nostalgia Ver.</h3>
+            <p> From “Goddess of Victory: Nikke” comes this detailed PVC statue! It stands approx. 15 cm tall and comes in a printed box.<br><br>POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon</p>
+            <div onclick="addToCart('Nikke Dorothy', '₱1,400.00', 'Product/No BG/Nikke.jpg', 'Item9'); return false;">
+              <button id="Item9"><span>₱1,400.00 </span></button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+<br>
+    <section class="menu" id="menu">
+        <div class="container menu-section">
+        <div class="menu-box" >
+          <div class="menu-img">
+            <img src="ana.jpg" alt="Yanami Anna" id="ana">
+          </div>
+          <div class="menu-content">
+            <h3><span style="color:red">[Best Selling!]</span><br>Too Many Losing Heroine Pop Up Parade Yanami Anna L Size</h3>
+            <p> From Too Many Losing Heroine comes this Pop Up Parade Statue of Yanami Anna bringing figure fans a brand new sense of excitement with the L line.<br><br>POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!</p>
+            <div onclick="addToCart('Yanami Anna', '₱1,400.00', 'Product/No BG/ana.jpg', 'Item10'); return false;">
+              <button id="Item10"><span>₱1,400.00 </span></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="menu-box" >
+          <div class="menu-img">
+            <img src="tsuna.jpg" alt="Tsunayoshi Sawada">
+          </div>
+          <div class="menu-content">
+            <h3>Katekyo Hitman Reborn Pop Up Parade Tsunayoshi Sawada</h3>
+            <p> From Katekyo Hitman Reborn comes this Pop Up Parade Statue of the Main Character Tsunayoshi Sawada!<br>
+              <br>
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!</p>
+            <div onclick="addToCart('Tsunayoshi Sawada', '₱1,400.00', 'Product/No BG/tsuna.jpg', 'Item11'); return false;">
+              <button id="Item11"><span>₱1,400.00 </span></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="menu-box" >
+          <div class="menu-img">
+            <img src="rimuru.jpg" alt="Rimuru Tempest">
+          </div>
+          <div class="menu-content">
+            <h3>That Time I Got Reincarnated as a Slime Pop Up Parade Rimuru Tempest</h3>
+            <p> From "That Time I Got Reincarnated as a Slime" comes a POP UP PARADE figure of the main character, Rimuru! Be sure to display Rimuru together with other POP UP PARADE figures from "That Time I Got Reincarnated as a Slime"!<br><br>POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!</p>
+            <div onclick="addToCart('Rimuru Tempest', '₱1,400.00', 'Product/No BG/rimuru.jpg', 'Item12'); return false;">
+              <button id="Item12"><span>₱1,400.00 </span></button>
+            </div>
+        </div>
+      </div>
+    </section>
+      
+      <!--Menu Section End-->
+      
+      <!--footer start--> 
+  <section class="footer">
+    <div class="container">
+      <div class="footer-box-1">
+        <h3>Location </h3>
+        <div class="footer-loc">
+        <a href="https://www.google.com/maps/place/Technological+University+of+the+Philippines+(TUP)+-+Manila/@14.5870842,120.9819119,17z/data=!3m1!4b1!4m6!3m5!1s0x3397ca21ac302015:0x92dcca0f915010d9!8m2!3d14.587079!4d120.9844868!16zL20vMGNyeGY2?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" style="color:white" target=_blank>College of Industrial Education
+        Ermita, Manila, 1000</a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>Stay update with our latest </p>
+      <form>
+        <input type="email" name="email" placeholder="name@gmail.com">
+        <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+      </form>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p>Connect with Us On:</p>
+      <div class="icons">
+        <a href="https://www.facebook.com/manuelf.baluyotiii" style="color:white"><i class="brands facebook">Baluyot's Facebook</i></a><br>
+        <a href="https://www.facebook.com/akoaypogi0714" style="color:white"><i class="brands facebook">Aranquiz's Facebook</i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>  
+    </div>
+  </div>
+</section>
+
+  <!--footerend-->
+  <script src="2-menu.js"></script>
+</body>
+</html>
